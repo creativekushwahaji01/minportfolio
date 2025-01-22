@@ -5,6 +5,8 @@ import Navbar from './modules/navbar';
 import Blog from './modules/blog';
 import Footer from "./modules/Footer";
 import ContactForm from "./pages/Contact";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
   return (

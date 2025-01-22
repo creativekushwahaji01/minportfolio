@@ -62,3 +62,8 @@
     
     
   }
+  @media screen and (max-width: 1050px){
+    .about{
+      margin-top: 50px;
+    }
+  }

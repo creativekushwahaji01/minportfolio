@@ -6,14 +6,17 @@
     padding: 0 3em;
     border-radius: 5px;
     border-bottom: 2px solid aqua;
-    width: 100%;
+    width: 90%;
+    margin: 0 5em;
     height: 60px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.8); /* Navbar background */
+    background-color: transparent; /* Navbar background */
     color: white;
+    backdrop-filter: blur(5px);
+    
 }
 
 /* Logo Styling */
@@ -61,17 +64,24 @@
     .desktop {
         display: none; /* Hide desktop menu by default */
     }
-
+    .nav_main{
+        height: 45px;
+    }
+    .nav_img_logo {
+        height: 40px;
+        max-width: 90px;
+    }
     .desktop.show {
         display: block; /* Show menu when toggled */
         position: absolute;
         top: 60px;
         right: 0;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: transparent;
         padding: 1em;
         z-index: 999;
         text-align: center;
+        backdrop-filter: blur(5px);
     }
 
     .desktop ul {
