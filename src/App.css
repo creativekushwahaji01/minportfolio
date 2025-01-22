@@ -1,38 +1,400 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+:root{
+  font-size:1vw;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+
+  text-align: center;
+
+}
+body{
+  background-color: rgb(20, 21, 38);
+  color: rgb(39, 198, 221);
+  text-decoration: none;
+  padding: 0 1vw;
+}
+.main{
+  margin: 0px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav_main > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1) {
+  text-decoration: navajowhite;
+}
+.nav_main > ul:nth-child(2) > li:nth-child(2) > a:nth-child(1) {
+  text-decoration: none;
+}
+.nav_main > ul:nth-child(2) > li:nth-child(3) > a:nth-child(1) {
+  text-decoration: none;
+}
+.nav_main > ul:nth-child(2) > li:nth-child(4) > a:nth-child(1) {
+  text-decoration: none;
+}
+/* styles.css */
+
+
+.image-swap-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  width: 20em;
+  /* overflow: hidden; */
+  position: relative;
+  margin-top: 10px;
+}
+
+.image {
+  width: auto;
+  height: 18em;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  z-index: 0;
+  filter: drop-shadow(3px 3px 7px rgb(39, 198, 221));
+}
+
+.image.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+
+.biomain{
+  display: flex;
+  justify-content: center;
+  margin-left: 9em;
+  margin-bottom: 4em;
+  margin-top: 4em;
+  padding-right: 9em;
+  font-size: calc(7px + 0.5em);
+}
+@media screen and (max-width: 700px) {
+  .biomain{
+    flex-wrap: wrap-reverse;
   }
+  .biomain{
+    padding: 2em 0px;
+    margin-left: 0px;
+  }
+}
+
+.bio_text{
+  text-align: justify;
+  width: 80vw;
+  padding-left: 10px;
+  padding-right: 1.2em;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+
+.cont_ainer {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+  
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #4362de;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .biomain{
+    flex-wrap: wrap-reverse;
+  }
+  .biomain{
+    padding: 2em 0px;
+  }
+  .fe{
+    margin-top: 10px;
+  }
+  .progressdiv{
+    display: inline;
+  }
+  .full_progress{
+    width: 200px;
+  }
+  .intro_bio{
+    font-size: calc(8px + 0.3em);
+  }
+  .cont_ainer{
+    display: none;
+  }
+  .lang_pro_bar{
+    font-size: 35px;
+  }
+}
+.icons{
+  height: 100px;
+  width: auto;
+  color: #4362de;
+}
+
+
+
+:root {
+  --shiny-cta-bg: #000000;
+  --shiny-cta-bg-subtle: #1a1818;
+  --shiny-cta-fg: #ffffff;
+  --shiny-cta-highlight: rgb(13, 13, 89);
+  --shiny-cta-highlight-subtle: #8484ff;
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --gradient-angle-offset {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --gradient-percent {
+  syntax: "<percentage>";
+  initial-value: 5%;
+  inherits: false;
+}
+
+@property --gradient-shine {
+  syntax: "<color>";
+  initial-value: white;
+  inherits: false;
+}
+
+.shiny-cta {
+  --animation: gradient-angle linear infinite;
+  --duration: 3s;
+  --shadow-size: 2px;
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  outline-offset: 4px;
+  padding: 1.25rem 2.5rem;
+  font-family: inherit;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  border-radius: 360px;
+  color: var(--shiny-cta-fg);
+  background: linear-gradient(var(--shiny-cta-bg), var(--shiny-cta-bg))
+      padding-box,
+    conic-gradient(
+        from calc(var(--gradient-angle) - var(--gradient-angle-offset)),
+        transparent,
+        var(--shiny-cta-highlight) var(--gradient-percent),
+        var(--gradient-shine) calc(var(--gradient-percent) * 2),
+        var(--shiny-cta-highlight) calc(var(--gradient-percent) * 3),
+        transparent calc(var(--gradient-percent) * 4)
+      )
+      border-box;
+  box-shadow: inset 0 0 0 1px var(--shiny-cta-bg-subtle);
+
+  &::before,
+  &::after,
+  span::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+  }
+
+  &:active {
+    translate: 0 1px;
+  }
+}
+
+/* Dots pattern */
+.shiny-cta::before {
+  --size: calc(100% - var(--shadow-size) * 3);
+  --position: 2px;
+  --space: calc(var(--position) * 2);
+  background: radial-gradient(
+      circle at var(--position) var(--position),
+      white calc(var(--position) / 4),
+      transparent 0
+    )
+    padding-box;
+  background-size: var(--space) var(--space);
+  background-repeat: space;
+  mask-image: conic-gradient(
+    from calc(var(--gradient-angle) + 45deg),
+    black,
+    transparent 10% 90%,
+    black
+  );
+  border-radius: inherit;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Inner shimmer */
+.shiny-cta::after {
+  --animation: shimmer linear infinite;
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(
+    -50deg,
+    transparent,
+    var(--shiny-cta-highlight),
+    transparent
+  );
+  mask-image: radial-gradient(circle at bottom, transparent 40%, black);
+  opacity: 0.6;
+}
+
+.shiny-cta span {
+  z-index: 1;
+
+  &::before {
+    --size: calc(100% + 1rem);
+    width: var(--size);
+    height: var(--size);
+    box-shadow: inset 0 -1ex 2rem 4px var(--shiny-cta-highlight);
+    opacity: 0;
+  }
+}
+
+/* Animate */
+.shiny-cta {
+  --transition: 800ms cubic-bezier(0.25, 1, 0.5, 1);
+  transition: var(--transition);
+  transition-property: --gradient-angle-offset, --gradient-percent,
+    --gradient-shine;
+
+  &,
+  &::before,
+  &::after {
+    animation: var(--animation) var(--duration),
+      var(--animation) calc(var(--duration) / 0.4) reverse paused;
+    animation-composition: add;
+  }
+
+  span::before {
+    transition: opacity var(--transition);
+    animation: calc(var(--duration) * 1.5) breathe linear infinite;
+  }
+}
+
+.shiny-cta:is(:hover, :focus-visible) {
+  --gradient-percent: 20%;
+  --gradient-angle-offset: 95deg;
+  --gradient-shine: var(--shiny-cta-highlight-subtle);
+
+  &,
+  &::before,
+  &::after {
+    animation-play-state: running;
+  }
+
+  span::before {
+    opacity: 1;
+  }
+}
+
+@keyframes gradient-angle {
+  to {
+    --gradient-angle: 360deg;
+  }
+}
+
+@keyframes shimmer {
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes breathe {
+  from,
+  to {
+    scale: 1;
+  }
+  50% {
+    scale: 1.2;
   }
 }

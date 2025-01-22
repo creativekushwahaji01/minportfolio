@@ -1,0 +1,262 @@
+.center {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.centop {
+    margin: 3.5vw;
+}
+
+.hed {
+    font-size: 5em;
+    background-image: linear-gradient(to bottom right, rgb(45, 17, 144), rgb(193, 102, 208));
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.cen1 {
+    font-size: 2.5em;
+    color: rgb(4, 170, 170);
+}
+
+.ref {
+    align-content: center;
+}
+
+.ref2 p {
+    font-size: 1.2em;
+}
+
+.ref2 {
+    padding-bottom: 20px;
+    border-style: inset;
+    border-radius: 30px;
+    /* background-image: linear-gradient(to bottom right, rgb(164, 154, 154), rgb(31, 28, 28));
+    background-color: transparent; */
+    color: rgb(39, 198, 221);
+    background-color: rgb(9, 10, 23);
+    width: auto;
+}
+
+/* .fe:hover {
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Courgette', cursive;
+} */
+
+.fe1:hover {
+    background-color: rgb(11, 114, 112);
+}
+
+
+
+.be1:hover {
+    background-color: rgb(235, 55, 15);
+}
+
+
+.ui1:hover {
+    background-color: rgb(8, 103, 98);
+}
+
+
+.ux1:hover {
+    background-color: rgb(96, 40, 208);
+}
+
+.fe {
+    margin: auto;
+    margin-top: 4vw;
+    width: 22vw;
+}
+
+.be {
+    margin: auto;
+    margin-top: 4vw;
+    width: 22vw;
+}
+
+.ui {
+    margin: auto;
+    margin-top: 4vw;
+    width: 22vw;
+}
+
+.ux {
+    margin: auto;
+    margin-top: 50px;
+    width: 22vw;
+}
+
+.fe1 {
+    margin: auto;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    background-color: #242424;
+    border-style: solid;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 5px;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    transition-duration: 0s;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    display: flex;
+}
+
+.fe1 svg {
+    margin-top: 18px;
+    margin-left: auto;
+    display: inline-block;
+}
+
+.be1 {
+    vertical-align: middle;
+    margin: auto;
+    width: 60px;
+    display: flex;
+    height: 60px;
+    background-color: #E68433;
+    border-style: solid;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 5px;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    transition-duration: 0s;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.be1 svg {
+    margin-left: auto;
+    margin-top: 18px;
+    display: inline-block;
+}
+
+.ux1 {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(159, 122, 234);
+    border-style: solid;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 5px;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    transition-duration: 0s;
+    transition-duration: 0.5s;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+}
+
+.ux1 svg {
+    align-content: center;
+    margin-top: 18px;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.ui1 {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(174, 133, 209, 0.2);
+    border-style: solid;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 5px;
+    margin: auto;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    transition-duration: 0s;
+    transition-duration: 0.5s;
+    display: flex;
+    cursor: pointer;
+}
+
+.ui1 svg {
+    margin-top: 18px;
+    margin-left: auto;
+    display: inline-block;
+}
+
+.ref2 {
+    margin: 4vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 250px) {
+    .fe {
+        min-width: 170px
+    }
+    .be {
+        min-width: 170px;
+    }
+    .ui {
+        min-width: 170px
+    }
+    .ux {
+        min-width: 170px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .ref2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: columnx;
+    }
+    .fe {
+        margin-top: 4vw;
+        width: 200px;
+    }
+    .be {
+        margin-top: 4vw;
+        width: 200px;
+    }
+    .ui {
+        margin-top: 4vw;
+        width: 200px;
+    }
+    .ux {
+        margin-top: 4vw;
+        width: 200px;
+    }
+}
+.fe1 svg{
+    width: 25.390625vw;
+}
+.be1 svg{
+    width: 25.390625vw;
+}
+.ux1 svg{
+    width: 25.390625vw;
+}
+.ui1 svg{
+    width: 25.390625vw;
+}
+
+@media screen and (max-width: 700px){
+    .ref2 p{
+        font-size: 12px;
+    }
+    .serv1 h1{
+        font-size: 14px;
+    }
+    .footer_cont p {
+        font-size: 8px;
+        }
+}
+
+.serv1{
+    transition: transform 0.3s ease;
+}
+.serv1:hover{
+    transform: scale(1.1) ;
+    
+}
