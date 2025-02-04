@@ -1,5 +1,5 @@
 import React from 'react'
-import SocialIcons from './Sociallinks'
+import SocialIcons from '../components/Icons';
 import avtar from '../imgs/thumb avtar.png';
 import '../css/Footer.css';
 

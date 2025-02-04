@@ -107,7 +107,7 @@
   animation: slideOutRight 0.8s forwards;
 }
 .mobile{
-  display: flex;
+  display: none;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
@@ -118,7 +118,11 @@
   .desktop{
       display: none;
   }
+  .mobile{
+    display: flex;
+  }
   .language-icon{
     height: 40px;
   }
   }
+ 
